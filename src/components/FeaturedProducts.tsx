@@ -7,7 +7,7 @@ import productJacket from "@/assets/product-jacket.jpg";
 
 const products = [
   {
-    id: 1,
+    id: "1",
     image: productJersey,
     name: "Chicago Bulls Icon Edition Swingman Jersey",
     category: "Jerseys",
@@ -16,7 +16,7 @@ const products = [
     isNew: true,
   },
   {
-    id: 2,
+    id: "2",
     image: productShoes,
     name: "LeBron XXI Performance Basketball Shoes",
     category: "Shoes",
@@ -24,7 +24,7 @@ const products = [
     isFeatured: true,
   },
   {
-    id: 3,
+    id: "3",
     image: productShorts,
     name: "NBA Icon Edition Authentic Shorts",
     category: "Apparel",
@@ -32,7 +32,7 @@ const products = [
     originalPrice: 90,
   },
   {
-    id: 4,
+    id: "4",
     image: productCap,
     name: "NBA All-Star 2024 Snapback Cap",
     category: "Accessories",
@@ -40,7 +40,7 @@ const products = [
     isNew: true,
   },
   {
-    id: 5,
+    id: "5",
     image: productJacket,
     name: "NBA Courtside Bomber Jacket",
     category: "Jackets",
@@ -48,7 +48,7 @@ const products = [
     isFeatured: true,
   },
   {
-    id: 6,
+    id: "6",
     image: productJersey,
     name: "LA Lakers Statement Edition Jersey",
     category: "Jerseys",

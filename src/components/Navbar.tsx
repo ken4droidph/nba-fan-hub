@@ -1,19 +1,17 @@
 import { useState } from "react";
 import { ShoppingCart, Search, Menu, X, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useCart } from "@/context/CartContext";
 
 const navLinks = [
   { name: "Jerseys", href: "#jerseys" },
-  { name: "Shoes", href: "#shoes" },
-  { name: "Apparel", href: "#apparel" },
   { name: "Teams", href: "#teams" },
-  { name: "Players", href: "#players" },
   { name: "New Releases", href: "#new" },
 ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [cartCount] = useState(0);
+  const { cartCount } = useCart();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
