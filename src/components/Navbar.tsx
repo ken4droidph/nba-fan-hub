@@ -3,9 +3,18 @@ import { ShoppingCart, Search, Menu, X, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/context/CartContext";
 
-const navLinks = [
+const desktopNavLinks = [
   { name: "Jerseys", href: "#jerseys" },
   { name: "Teams", href: "#teams" },
+  { name: "New Releases", href: "#new" },
+];
+
+const mobileNavLinks = [
+  { name: "Jerseys", href: "#jerseys" },
+  { name: "Shoes", href: "#shoes" },
+  { name: "Apparel", href: "#apparel" },
+  { name: "Teams", href: "#teams" },
+  { name: "Players", href: "#players" },
   { name: "New Releases", href: "#new" },
 ];
 
@@ -29,7 +38,7 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
+            {desktopNavLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
@@ -70,7 +79,7 @@ export const Navbar = () => {
         {isOpen && (
           <div className="lg:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
+              {mobileNavLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
